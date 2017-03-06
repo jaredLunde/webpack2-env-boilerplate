@@ -20,11 +20,13 @@
       "presets": [
         [
           "env", {
-            "debug": true,
+            "debug": false,
             "modules": false,
             "useBuiltIns": true,
             "targets": {
-              "browsers": "last 1 version",
+              "browsers": {
+                "chrome": ">=56"
+              },
               "node": "current"
             }
           }
