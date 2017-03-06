@@ -12,12 +12,11 @@
     "url": ""
   },
   "scripts": {
-    "start": "cross-env NODE_ENV=development node server.js",
+    "start": "npm run node ./lib/index.js",
     "build": "npm run build:es5 && npm run build:es && npm run build:dist",
     "build:es5": "rm -rf es5 && cross-env NODE_ENV=cli babel ./lib --out-dir es5",
     "build:es": "rm -rf es && cross-env NODE_ENV=production babel ./lib --out-dir es",
     "build:dist": "rm -rf dist && cross-env NODE_ENV=production webpack --config webpack.config.js",
-    "start:cli": "npm run node ./lib/index.js",
     "node": "cross-env NODE_ENV=cli babel-node",
     "watch:es5": "cross-env NODE_ENV=cli babel ./lib -w --out-dir es5",
     "watch:es": "cross-env NODE_ENV=es babel ./lib -w --out-dir es",
