@@ -14,7 +14,7 @@
           }
         ]
       ],
-      "plugins": ["transform-decorators-legacy"]
+      "plugins": ["transform-decorators-legacy", "transform-class-properties"]
     },
     "development": {
       "presets": [
@@ -32,7 +32,7 @@
           }
         ]
       ],
-      "plugins": ["transform-decorators-legacy"]
+      "plugins": ["transform-decorators-legacy", "transform-class-properties"]
     },
     "cli": {
       "presets": [
@@ -46,7 +46,7 @@
           }
         ]
       ],
-      "plugins": ["transform-decorators-legacy"]
+      "plugins": ["transform-decorators-legacy", "transform-class-properties"]
     }
   }
 }
