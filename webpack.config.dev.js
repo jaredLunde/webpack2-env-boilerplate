@@ -28,7 +28,7 @@ module.exports = {
     modules: [path.join(__dirname, 'node_modules')],
     moduleExtensions: ["-loader"],
   },
-  
+
   resolve: {
     // Directories that contain our modules
     modules: [path.resolve(__dirname, "lib"), "node_modules"],
@@ -42,7 +42,7 @@ module.exports = {
     rules: [
       {
         test: /\.js$/,
-        loader: 'babel',
+        use: ['babel'],
         exclude: [/node_modules/]
       }
     ],
