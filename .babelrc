@@ -1,0 +1,50 @@
+{
+  "env": {
+    "production": {
+      "presets": [
+        [
+          "env", {
+              "debug": true,
+              "modules": false,
+              "useBuiltIns": true,
+              "targets": {
+                "browsers": "defaults",
+                "node": "current"
+              }
+          }
+        ]
+      ],
+      "plugins": ["transform-decorators-legacy"]
+    },
+    "development": {
+      "presets": [
+        [
+          "env", {
+            "debug": true,
+            "modules": false,
+            "useBuiltIns": true,
+            "targets": {
+              "browsers": "last 1 version",
+              "node": "current"
+            }
+          }
+        ]
+      ],
+      "plugins": ["transform-decorators-legacy"]
+    },
+    "cli": {
+      "presets": [
+        [
+          "env", {
+            "debug": true,
+            "modules": false,
+            "targets": {
+              "node": "current"
+            }
+          }
+        ]
+      ],
+      "plugins": ["transform-decorators-legacy"]
+    }
+  }
+}
