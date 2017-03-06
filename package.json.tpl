@@ -5,7 +5,7 @@
   "module": "es/index",
   "private": true,
   "devDependencies": {
-    "webpack2-env-boilerplate": "^0.1.6"
+    "webpack2-env-boilerplate": "^0.1.7"
   },
   "repository": {
     "type": "git",

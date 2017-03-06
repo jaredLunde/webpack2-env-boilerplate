@@ -38,6 +38,7 @@
           "env", {
             "debug": true,
             "modules": false,
+            "useBuiltIns": true,
             "targets": {
               "node": "current"
             }
