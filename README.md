@@ -34,6 +34,6 @@ aggressive code splitting.
 This is an example of a basic Babel 6 configuration utilizing babel-preset-env.
 
 
-### /lib
+### /src
 This is where an example index file is located and where your package source
 code would be placed.

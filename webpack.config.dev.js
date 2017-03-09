@@ -19,21 +19,21 @@ module.exports = {
   output: {
     path: path.join(__dirname, '/dist'),
     publicPath: '/assets/',
-    filename: "{{PKG_NAME}}.dev.js",
+    filename: '{{PKG_NAME}}.dev.js',
     pathinfo: true
   },
 
   // Where to resolve our loaders
   resolveLoader: {
     modules: [path.join(__dirname, 'node_modules')],
-    moduleExtensions: ["-loader"],
+    moduleExtensions: ['-loader'],
   },
 
   resolve: {
     // Directories that contain our modules
-    modules: [path.resolve(__dirname, "lib"), "node_modules"],
-    descriptionFiles: ["package.json"],
-    moduleExtensions: ["-loader"],
+    modules: [path.resolve(__dirname, 'src'), 'node_modules'],
+    descriptionFiles: ['package.json'],
+    moduleExtensions: ['-loader'],
     // Extensions used to resolve modules
     extensions: ['.js', '.react.js']
   },
